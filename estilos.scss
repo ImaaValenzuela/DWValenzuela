@@ -1,15 +1,8 @@
-$color1: #1b1b1b;
-$color2: #ffffff;
-$color3: #efefef;
-$color4: #ABCDE1;
-$color6: #5F5E5E;
-$color5: #373737 ;
-
 body{
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-    background-color: $color1;
-    color: $color2;
+    background-color: black;
+    color: white;
     letter-spacing: .05rem;
 }
 
@@ -21,28 +14,26 @@ body{
     margin-left: 2rem;
 }
 
-.sideways{
+.sideaways{
     writing-mode: vertical-lr;
     display: block;
     margin: 3.5rem;
     transform: rotate(-180deg);
 }
 
-/* HOME */
-
 .btn-primary{
     background-color: transparent;
-    border: 1px solid $color2;
-    border-radius: 0;
-    color: $color2;
+    border: 1px solid white;
+    border-radius: 0%;
+    color: white;
     padding: .7rem 2.5rem;
     font-size: 1.25rem;
 }
 
 .btn-primary:hover{
-    background-color: $color2;
-    color: $color1;
-    border: 1px solid $color2;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
 }
 
 .navbar{
@@ -54,21 +45,83 @@ body{
 }
 
 .nav-item:hover{
-    color: $color1;
-    background-color: $color2;
+    color: skyblue;
+    background-color: white;
 }
 
 .row-home:hover{
-    background-color: $color5;
-    color: $color4;
+    background-color: black;
+    color: skyblue;
     border-radius: .5rem;
 }
 
-/* FOOTER */
+.containerHome{
+    background-color: black;
+}
+
+.zoom{
+    transition: transform .2s;
+}
+
+.zoom:hover{
+    transform: scale(1.5S);
+}
+
+.btn-calis{
+    background-color: transparent;
+    color: white;
+    padding: .7rem 2.5rem;
+    font-size: 1.25rem;
+}
+
+.btn-routines{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 1rem;
+    color: white;
+    padding: .7rem 2.5rem;
+    font-size: 1.25rem;
+}
+
+.btn-routines:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
 
 .footer-color{
-    background-color: $color6;
+    background-color: gray
 }
 .copyright{
-    background-color: $color1;
+    background-color: black
+}
+
+@mixin cuadrado ($fondo, $ancho){
+    background-color: $fondo;
+    width: $ancho;
+    height: 200px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.cuadrado-1{
+    @include cuadrado(#111, 300px);
+}
+
+.cuadrado-2{
+    @include cuadrado(#222, 100px);
+}
+
+.cuadrado-3{
+    @include cuadrado(#333, 600px);
+}
+
+$estilos(
+    color: #fefefe,
+    tFuente: 1rem
+)
+
+.mapa1{
+    background-color: map-get($estilos, color);
+    font-size: map-get($estilos, tFuente)
 }
