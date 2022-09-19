@@ -1,0 +1,70 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  background-color: var(#1b1b1b);
+  color: var(#ffffff);
+  letter-spacing: .05rem;
+}
+
+.lead-xl {
+  font-size: 1.75rem;
+}
+
+.nav-link {
+  margin-left: 2rem;
+}
+
+.sideways {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  display: block;
+  margin: 3.5rem;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+/* HOME */
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid var(#ffffff);
+  border-radius: 0;
+  color: var(#ffffff);
+  padding: .7rem 2.5rem;
+  font-size: 1.25rem;
+}
+
+.btn-primary:hover {
+  background-color: var(#ffffff);
+  color: #1b1b1b;
+  border: 1px solid var(#ffffff);
+}
+
+.navbar {
+  height: 5rem;
+}
+
+.border-right {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.nav-item:hover {
+  color: var(#1b1b1b);
+  background-color: var(#ffffff);
+}
+
+.row-home:hover {
+  background-color: var(#373737);
+  color: var(#ABCDE1);
+  border-radius: .5rem;
+}
+
+/* FOOTER */
+.footer-color {
+  background-color: var(#5F5E5E);
+}
+
+.copyright {
+  background-color: var(#1b1b1b);
+}
+/*# sourceMappingURL=estilos.css.map */
