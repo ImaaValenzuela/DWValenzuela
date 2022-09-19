@@ -4,64 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power Gym - Te Contactamos</title>
+    <title>Power Gym - Rutinas</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <script src="https://kit.fontawesome.com/2bc45499a5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Power Gym</h1>
-    <h2>Queres, es poder</h2> <hr>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="info.html">¿Quienes Somos?</a></li>
-            <li><a href="pov.html">Disciplinas</a></li>
-            <li><a href="routines.html">Rutinas</a></li>
-            <li><a href="contact.html">Contactanos</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h3>Te Contactamos</h3>
-        <form action="enviar.php" method="post">
-            <fieldset>
-                <legend>Datos Personales</legend>
-            <label for="">Nombre</label>
-            <input type="text" placeholder="Escribe tu nombre"> <br>
-            <label for="">Apellido</label>
-            <input type="text" placeholder="Escribe tu apellido"> <br>
-            <p>Ingresa tu genero</p>
-            <input name="Sexo" type="radio">
-            <label for="">Hombre</label>
-            <br>
-            <input name="Sexo" type="radio">
-            <label for="">Mujer</label>
-            <br>
-            <input name="Sexo" type="radio">
-            <label for="">Indefinido</label>
-            <br>
-            <br>
-            <textarea placeholder="Describe tus objetivos" name="comentarios" id="comentarios" cols="30" rows="5"></textarea> 
-            <br>
-            <br>
-            <label for="Correo">Correo</label>
-            <input type="mail" name="Correo" placeholder="Escribe tu mail"> <br>
-            <label for="">Telefono</label>
-            <input type="number" placeholder="Escribe tu Telefono"> <br>
-            <br>
-            <input type="checkbox">
-            <label for="">Acepto los terminos y condiciones</label>
-            <br>
-            <input type="submit" value="enviar">
-            <input type="reset" value="borrar">
-        </fieldset>
-        </form>
-    </section> <hr>
-    <footer>
-        <p>
-            Copy
-            Logo
-            Redes
-        </p>
-    </footer>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Power Gym</h1>
+            </div>
+            <nav class="menu">
+                <a href="../index.html">Inicio</a>
+                <a href="info.html">¿Quienes Somos?</a>
+                <a href="pov.html">Disciplinas</a>
+                <a href="routines.html">Rutinas</a>
+                <a href="contact.html">Contacto</a>
+            </nav>
 
+        </div>
+    </header> 
+    <section>
+        <p class="tituloC">Contactos</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa dignissimos facere beatae maiores rerum accusantium pariatur laboriosam, suscipit dolores quidem dolorum dolorem nesciunt delectus nam consequuntur praesentium illum hic necessitatibus.</p>
+        <p>Nuestras redes son:</p>
+        <div class="infoRedes">
+            <div class="redireccion">
+                <a href="#" class="fa fa-instagram">Instagram</a>
+                <a href="#" class="fa fa-youtube">Youtube</a>
+                <a href="#" class="fa fa-facebook">Facebook</a>
+                <a href="#"class="fa fa-twitter">Twitter</a>
+            </div>
+        </div>
+        <div class="infoC">
+            <p class="subtituloC">Te Contactamos!</p>
+            <form action="enviar.php" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                <label for="">Nombre</label>
+                <input type="text" placeholder="Escribe tu nombre"> <br>
+                <label for="">Apellido</label>
+                <input type="text" placeholder="Escribe tu apellido"> <br>
+                <p>Ingresa tu genero</p>
+                <input name="Sexo" type="radio">
+                <label for="">Hombre</label>
+                <br>
+                <input name="Sexo" type="radio">
+                <label for="">Mujer</label>
+                <br>
+                <input name="Sexo" type="radio">
+                <label for="">Indefinido</label>
+                <br>
+                <br>
+                <textarea placeholder="Describe tus objetivos" name="comentarios" id="comentarios" cols="30" rows="5"></textarea> 
+                <br>
+                <br>
+                <label for="Correo">Correo</label>
+                <input type="mail" name="Correo" placeholder="Escribe tu mail"> <br>
+                <label for="">Telefono</label>
+                <input type="number" placeholder="Escribe tu Telefono"> <br>
+                <br>
+                <input type="checkbox">
+                <label for="">Acepto los terminos y condiciones</label>
+                <br>
+                <input type="submit" value="enviar">
+                <input type="reset" value="borrar">
+            </fieldset>
+            </form>
+        </div>
+    </section>
+    <footer class="piePagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img class="logoFooter" src="../img/logoprovisional.png" alt="logo provisional">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, et.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, et.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="redsocial">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#"class="fa fa-twitter"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2022 <b>Power Gym</b> - Todos los Derechos Reservados</small>
+
+        </div>
+        
+    </footer>
     
 </body>
 </html>
